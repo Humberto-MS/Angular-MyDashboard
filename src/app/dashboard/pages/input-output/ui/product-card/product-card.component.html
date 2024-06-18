@@ -1,0 +1,10 @@
+<div class="bg-slate-300 w-full rounded-xl h-40 flex justify-center items-center flex-col">
+  <span> {{ producto().name }} </span>
+  <h2 class="font-bold text-sm"># {{ producto().id }} </h2>
+
+  <button
+    (click)="incrementQuantity()"
+    class="bg-blue-500 p-2 rounded text-white hover:bg-blue-600 transition-all">
+    Cantidad {{ producto().quantity }}
+  </button>
+</div>
